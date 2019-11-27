@@ -15,16 +15,16 @@ export const schoolInfo = { // term details section
         { // for multiple examples of interest only, add items to interestOnly array
             programName: '',
             APR36: '10.94%',
-            financeCharge36: '$2,123.00',
-            IOPayment36: '$65.45',
-            FullMonthlyPayment36: '$277.76',
+            financeCharge36: '$1,971.36',
+            IOPayment36: '$60.77',
+            FullMonthlyPayment36: '$257.92',
             APR60: '12.41%',
-            financeCharge60: '$3,633.95',
-            IOPayment60: '$80.01',
-            FullMonthlyPayment60: '$189.90',
-            LoanExampleAmt: '$8,400',
-            LoanExampleOFeeAmt: '$336',
-            LoanExampleAmtPlusOFee: '$8,736',
+            financeCharge60: '$3,374.38',
+            IOPayment60: '$74.29',
+            FullMonthlyPayment60: '$176.33',
+            LoanExampleAmt: '$7,800',
+            LoanExampleOFeeAmt: '$312',
+            LoanExampleAmtPlusOFee: '$8,112',
             programLength: '6' // program length in months
         }
     ],
@@ -58,19 +58,19 @@ export const faq = { // faq section
     origFee: 0.04,
 
     // interest payment FAQ info
-    exampleLoanAmount: '$8,400',
+    exampleLoanAmount: '$7,800',
     interestRate36: '8.99%',
     interestRate60: '10.99%',
     APR36: '10.94%',
     APR60: '12.41%',
-    IOPayment36: '$65.45',
-    IOPayment60: '$80.01',
+    IOPayment36: '$60.77',
+    IOPayment60: '$74.29',
 
     // max loan amounts by program for faq1
     loanRange: [
         {
             programName: "the Mobile & Web Development program",
-            maxAmount: "$8,400",
+            maxAmount: "$7,800",
             col: true,
             colAmount: "$2,500"
         }
@@ -118,8 +118,8 @@ export const selectAProgram = "program_name" // update school name to match form
 
 // ***** BEGIN LOAN APP AND CALC INFO *****
 
-export const defaultLoanAmount = 8400
-export const placeholder = '$8,400'
+export const defaultLoanAmount = 7800
+export const placeholder = '$7,800'
 export const interestRates = {
     ir36: 8.99,
     ir60: 10.99
@@ -131,7 +131,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
         name: "Mobile & Web Development",
         url: "https://sf.privateloan.studentloan.org/external/LoanApplication.do?lenderCode=SKEP17",
         loanInfo: { // match loanInfo in first metro below
-            maxLoanAmt: 10900,
+            maxLoanAmt: 10300,
             loanTerm36: true,
             loanTerm60: true,
             '0': { // interest-only 
@@ -149,7 +149,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
           {
             location: "Metro 1",
             loanInfo: { // // match loanInfo to Program 1 above
-              maxLoanAmt: 10900,
+              maxLoanAmt: 10300,
               loanTerm36: true,
               loanTerm60: true,
               '0': { 
@@ -317,7 +317,7 @@ export const programLoanInfo = [ // update with program names and corresponding 
 ]
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
-export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $8,400 for Epicodus tuition and up to $2,500 for cost of living."
+export const programMaxText = "Choose the loan amount that works best for you. Borrow up to $7,800 for Epicodus tuition and up to $2,500 for cost of living."
 
 export const paymentTable = {
     headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
