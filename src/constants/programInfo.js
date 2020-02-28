@@ -1,367 +1,368 @@
-import logo from '../images/logo_epicodus.png'; // add school logo to images folder and import here
+import logo from "../images/logo_epicodus.png" // add school logo to images folder and import here
 
-export const applicationsLive = true; // set to false if not currently accepting applications
-export const disabledLoanAppFormID = '69140c47-bb03-4a1b-b674-cc136fdea23d'; // Hubspot ID for all disabled apply now lead captures
-export const nextCohortStartDate = 'October 29, 2019';
+export const applicationsLive = true // set to false if not currently accepting applications
+export const disabledLoanAppFormID = "69140c47-bb03-4a1b-b674-cc136fdea23d" // Hubspot ID for all disabled apply now lead captures
+export const nextCohortStartDate = "October 29, 2019"
 
 // ***** BEGIN TERMS AND FAQ INFO *****
 
 export const schoolInfo = {
-	// term details section
-	interestRate36: '8.99%',
-	interestRate60: '10.99%',
-	APRRange36: '10.94%',
-	APRRange60: '12.41%',
-	interestOnly: [
-		{
-			// for multiple examples of interest only, add items to interestOnly array
-			programName: '',
-			APR36: '10.94%',
-			financeCharge36: '$1,971.36',
-			IOPayment36: '$60.77',
-			FullMonthlyPayment36: '$257.92',
-			APR60: '12.41%',
-			financeCharge60: '$3,374.38',
-			IOPayment60: '$74.29',
-			FullMonthlyPayment60: '$176.33',
-			LoanExampleAmt: '$7,800',
-			LoanExampleOFeeAmt: '$312',
-			LoanExampleAmtPlusOFee: '$8,112',
-			programLength: '6' // program length in months
-		}
-	],
-	immediateRepayment: [
-		{
-			// for multiple examples of immmediate repayment, add items to immediateRepayment array
-			programName: 'PROGRAM NAME',
-			APR36: 'XX.XX%',
-			financeCharge36: '$X,XXX.XX',
-			FullMonthlyPayment36: '$XXX.XX',
-			APR60: 'XX.XX%',
-			financeCharge60: '$X,XXX.XX',
-			FullMonthlyPayment60: '$XXX.XX',
-			LoanExampleAmt: '$10,000',
-			LoanExampleOFeeAmt: '$400',
-			LoanExampleAmtPlusOFee: '$10,400'
-		}
-	]
-};
+  // term details section
+  interestRate36: "8.99%",
+  interestRate60: "10.99%",
+  APRRange36: "10.94%",
+  APRRange60: "12.41%",
+  interestOnly: [
+    {
+      // for multiple examples of interest only, add items to interestOnly array
+      programName: "",
+      APR36: "10.94%",
+      financeCharge36: "$1,946.09",
+      IOPayment36: "$59.99",
+      FullMonthlyPayment36: "$254.61",
+      APR60: "12.41%",
+      financeCharge60: "$3,331.12",
+      IOPayment60: "$73.34",
+      FullMonthlyPayment60: "$174.07",
+      LoanExampleAmt: "$7,700",
+      LoanExampleOFeeAmt: "$308",
+      LoanExampleAmtPlusOFee: "$8,008",
+      programLength: "6", // program length in months
+    },
+  ],
+  immediateRepayment: [
+    {
+      // for multiple examples of immmediate repayment, add items to immediateRepayment array
+      programName: "PROGRAM NAME",
+      APR36: "XX.XX%",
+      financeCharge36: "$X,XXX.XX",
+      FullMonthlyPayment36: "$XXX.XX",
+      APR60: "XX.XX%",
+      financeCharge60: "$X,XXX.XX",
+      FullMonthlyPayment60: "$XXX.XX",
+      LoanExampleAmt: "$10,000",
+      LoanExampleOFeeAmt: "$400",
+      LoanExampleAmtPlusOFee: "$10,400",
+    },
+  ],
+}
 
 export const faq = {
-	// faq section
-	costOfLiving: true, // true if at least one program has cost of living included
-	costOfLivingPrograms: 'Mobile & Web Development', // leave as empty string is cost of living availability is the same across all programs
-	multCostOfLivingPrograms: false, // true if costOfLivingPrograms string has more than one program
-	interestOnly: true, // true if interest-only payments are an option
-	immediateRepayment: false, // true if immediate repayment is an option
-	multipleLoanLengths: true, // true if 36 and 60 month options are both available
-	multipleLoanTypes: false, // true if both IR and IO are available
-	multiPrograms: true, // only true if there are multiple programs
-	onlinePrograms: false, // true if at least one program is remote/online
-	schoolHQState: 'WA',
-	origFee: 0.04,
+  // faq section
+  costOfLiving: true, // true if at least one program has cost of living included
+  costOfLivingPrograms: "Mobile & Web Development", // leave as empty string is cost of living availability is the same across all programs
+  multCostOfLivingPrograms: false, // true if costOfLivingPrograms string has more than one program
+  interestOnly: true, // true if interest-only payments are an option
+  immediateRepayment: false, // true if immediate repayment is an option
+  multipleLoanLengths: true, // true if 36 and 60 month options are both available
+  multipleLoanTypes: false, // true if both IR and IO are available
+  multiPrograms: true, // only true if there are multiple programs
+  onlinePrograms: false, // true if at least one program is remote/online
+  schoolHQState: "WA",
+  origFee: 0.04,
 
-	// interest payment FAQ info
-	exampleLoanAmount: '$7,800',
-	interestRate36: '8.99%',
-	interestRate60: '10.99%',
-	APR36: '10.94%',
-	APR60: '12.41%',
-	IOPayment36: '$60.77',
-	IOPayment60: '$74.29',
+  // interest payment FAQ info
+  exampleLoanAmount: "$7,700",
+  interestRate36: "8.99%",
+  interestRate60: "10.99%",
+  APR36: "10.94%",
+  APR60: "12.41%",
+  IOPayment36: "$59.99",
+  IOPayment60: "$73.34",
 
-	// max loan amounts by program for faq1
-	loanRange: [
-		{
-			programName: 'the Mobile & Web Development program',
-			maxAmount: '$7,800',
-			col: true,
-			colAmount: '$2,500'
-		},
-		{
-			programName: 'the JavaScript + React program',
-			maxAmount: '$5,400',
-			col: false,
-			colAmount: '$2,500'
-		}
-	]
-};
+  // max loan amounts by program for faq1
+  loanRange: [
+    {
+      programName: "the Mobile & Web Development program",
+      maxAmount: "$7,700",
+      col: true,
+      colAmount: "$2,500",
+    },
+    {
+      programName: "the JavaScript + React program",
+      maxAmount: "$5,400",
+      col: false,
+      colAmount: "$2,500",
+    },
+  ],
+}
 
 // ***** END TERMS AND FAQ INFO *****
 
 // ***** BEGIN GENERAL SCHOOL INFO *****
 
-export const schoolLogo = logo; // go to header.js if height needs adjustment
+export const schoolLogo = logo // go to header.js if height needs adjustment
 
-export const schoolName = 'Epicodus';
+export const schoolName = "Epicodus"
 
-export const schoolURL = 'https://www.epicodus.com/'; // update with url of school's website
+export const schoolURL = "https://www.epicodus.com/" // update with url of school's website
 
-export const skfURL = 'https://epicodus.skills.fund'; // update with Skills Fund url
+export const skfURL = "https://epicodus.skills.fund" // update with Skills Fund url
 
-export const headline = 'Learn to Code at Epicodus'; // update headline as appropriate
+export const headline = "Learn to Code at Epicodus" // update headline as appropriate
 
 export const leadContent = {
-	header: 'Your last step on the path toward changing your career',
-	paragraph: `${schoolName} designs its program to provide students a foundation for a career in software development. ${schoolName} partners with Skills Fund to offer tuition${faq.costOfLiving
-		? ' and cost of living'
-		: ''} financing so more students like you can access their program.`
-};
+  header: "Your last step on the path toward changing your career",
+  paragraph: `${schoolName} designs its program to provide students a foundation for a career in software development. ${schoolName} partners with Skills Fund to offer tuition${
+    faq.costOfLiving ? " and cost of living" : ""
+  } financing so more students like you can access their program.`,
+}
 
 export const threeStepCardText = {
-	step1: '',
-	step2: {
-		header: 'select your program',
-		text: 'Choose between the Mobile & Web Development program and the JavaScript + React program.'
-	},
-	step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`
-};
+  step1: "",
+  step2: {
+    header: "select your program",
+    text:
+      "Choose between the Mobile & Web Development program and the JavaScript + React program.",
+  },
+  step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
+}
 
-export const netlifyFormName = 'epicodus_contact';
+export const netlifyFormName = "epicodus_contact"
 
-export const GATracking = 'UA-68312423-1';
+export const GATracking = "UA-68312423-1"
 
-export const hubspotFormId = 'ab525535-3ec9-4637-ab3a-841fab1f0ba8'; // create Hubspot form, get form id after publishing
+export const hubspotFormId = "ab525535-3ec9-4637-ab3a-841fab1f0ba8" // create Hubspot form, get form id after publishing
 
-export const selectAProgram = 'select_a_epicodus_program'; // update school name to match form field on Hubspot, *** change to "program_name" if only one program ***"
+export const selectAProgram = "select_a_epicodus_program" // update school name to match form field on Hubspot, *** change to "program_name" if only one program ***"
 
 // ***** END GENERAL SCHOOL INFO *****
 
 // ***** BEGIN LOAN APP AND CALC INFO *****
 
-export const defaultLoanAmount = 7800;
-export const placeholder = '$7,800';
+export const defaultLoanAmount = 7700
+export const placeholder = "$7,700"
 export const interestRates = {
-	ir36: 8.99,
-	ir60: 10.99
-};
-export const moreThanSixPrograms = false; // set to true if there are 7 or more programs in the loan application. True will render a dropdown menu, false will render buttons for each program.
+  ir36: 8.99,
+  ir60: 10.99,
+}
+export const moreThanSixPrograms = false // set to true if there are 7 or more programs in the loan application. True will render a dropdown menu, false will render buttons for each program.
 
 export const programLoanInfo = [
-	// update with program names and corresponding loan URLs with market segment code from Master Loan Parameters
-	{
-		name: 'Mobile & Web Development',
-		url: 'https://my.skills.fund/application?lenderCode=SKEP17',
-		loanInfo: {
-			// match loanInfo in first metro below
-			maxLoanAmt: 10300,
-			loanTerm36: true,
-			loanTerm60: true,
-			'0': {
-				// interest-only
-				k: 8,
-				apr36: 10.94,
-				apr60: 12.51
-			},
-			'1': null // immediate repayment
-		},
-		defaultLoanType: '0', // leave at 0 for interest-only, set to 1 for immediate repayment
-		showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
-		showLoanTypes: false, // true if both IR and IO are available
-		locations: [ 'Metro 1', 'Metro 2', 'Metro 3' ],
-		metros: [
-			// list in same order as locations array above
-			{
-				location: 'Metro 1',
-				loanInfo: {
-					// // match loanInfo to Program 1 above
-					maxLoanAmt: 10300,
-					loanTerm36: true,
-					loanTerm60: true,
-					'0': {
-						k: 8,
-						apr36: 10.94,
-						apr60: 12.41
-					},
-					'1': null
-				}
-			},
-			{
-				location: 'Metro 2',
-				loanInfo: {
-					maxLoanAmt: 15545,
-					loanTerm36: true,
-					loanTerm60: true,
-					'0': {
-						k: 5,
-						apr36: 10.94,
-						apr60: 12.41
-					},
-					'1': null
-				}
-			},
-			{
-				location: 'Metro 3',
-				loanInfo: {
-					maxLoanAmt: 20545,
-					loanTerm36: true,
-					loanTerm60: true,
-					'0': {
-						k: 5,
-						apr36: 11.16,
-						apr60: 12.51
-					},
-					'1': null
-				}
-			}
-		]
-	},
-	{
-		name: 'JavaScript + React',
-		url: 'https://my.skills.fund/application?lenderCode=SKEPJR19',
-		loanInfo: {
-			// match loanInfo in first metro below
-			maxLoanAmt: 5400,
-			loanTerm36: true,
-			loanTerm60: true,
-			'0': {
-				k: 8,
-				apr36: 10.94,
-				apr60: 12.51
-			},
-			'1': null
-		},
-		defaultLoanType: '0', // leave at 0 for interest-only, set to 1 for immediate repayment
-		showMetros: false,
-		showLoanTypes: false,
-		locations: [ 'Metro 1', 'Metro 2' ],
-		metros: [
-			{
-				location: 'Metro 1',
-				loanInfo: {
-					// match loanInfo to Program 2 loanInfo above
-					maxLoanAmt: 5400,
-					loanTerm36: true,
-					loanTerm60: true,
-					'0': {
-						k: 8,
-						apr36: 10.94,
-						apr60: 12.51
-					},
-					'1': null
-				}
-			},
-			{
-				location: 'Metro 2',
-				loanInfo: {
-					maxLoanAmt: 15545,
-					loanTerm36: true,
-					loanTerm60: true,
-					'0': {
-						k: 5,
-						apr36: 11.16,
-						apr60: 12.51
-					},
-					'1': null
-				}
-			}
-		]
-	}
-	// {
-	//     name: "Program 3",
-	//     url: "https://my.skills.fund/application?lenderCode=LENDERCODE3",
-	//     loanInfo: { // match loanInfo in first metro below
-	//         maxLoanAmt: 15995,
-	//         loanTerm36: true,
-	//         loanTerm60: true,
-	//         '0': {
-	//             k: 5,
-	//             apr36: 11.16,
-	//             apr60: 12.51
-	//         },
-	//         '1': {
-	//           apr36: 11.25,
-	//           apr60: 12.55
-	//       }
-	//     },
-	//     defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
-	//     showMetros: false,
-	//     showLoanTypes: false,
-	//     locations: ["Metro A", "Metro B", "Metro C"],
-	//     metros: [
-	//         {
-	//           location: "Metro A",
-	//           loanInfo: { // match loanInfo to Program 3 loanInfo above
-	//             maxLoanAmt: 15995,
-	//             loanTerm36: true,
-	//             loanTerm60: true,
-	//             '0': {
-	//                 k: 5,
-	//                 apr36: 11.16,
-	//                 apr60: 12.51
-	//             },
-	//             '1': {
-	//                 apr36: 11.25,
-	//                 apr60: 12.55
-	//             }
-	//           }
-	//         },
-	//         {
-	//           location: "Metro B",
-	//           loanInfo: {
-	//               maxLoanAmt: 15545,
-	//               loanTerm36: true,
-	//               loanTerm60: true,
-	//               '0': {
-	//                 k: 5,
-	//                 apr36: 11.16,
-	//                 apr60: 12.51
-	//               },
-	//               '1': {
-	//                 apr36: 11.25,
-	//                 apr60: 12.55
-	//             }
-	//           }
-	//         },
-	//         {
-	//           location: "Metro C",
-	//           loanInfo: {
-	//               maxLoanAmt: 20545,
-	//               loanTerm36: true,
-	//               loanTerm60: true,
-	//               '0': {
-	//                 k: 5,
-	//                 apr36: 11.16,
-	//                 apr60: 12.51
-	//               },
-	//               '1': {
-	//                 apr36: 11.25,
-	//                 apr60: 12.55
-	//             }
-	//             },
-	//           }
-	//       ]
-	// }
-];
+  // update with program names and corresponding loan URLs with market segment code from Master Loan Parameters
+  {
+    name: "Mobile & Web Development",
+    url: "https://my.skills.fund/application?lenderCode=SKEP17",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 10200,
+      loanTerm36: true,
+      loanTerm60: true,
+      "0": {
+        // interest-only
+        k: 8,
+        apr36: 10.94,
+        apr60: 12.51,
+      },
+      "1": null, // immediate repayment
+    },
+    defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 10200,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 8,
+            apr36: 10.94,
+            apr60: 12.41,
+          },
+          "1": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 10.94,
+            apr60: 12.41,
+          },
+          "1": null,
+        },
+      },
+      {
+        location: "Metro 3",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "JavaScript + React",
+    url: "https://my.skills.fund/application?lenderCode=SKEPJR19",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 5400,
+      loanTerm36: true,
+      loanTerm60: true,
+      "0": {
+        k: 8,
+        apr36: 10.94,
+        apr60: 12.51,
+      },
+      "1": null,
+    },
+    defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    locations: ["Metro 1", "Metro 2"],
+    metros: [
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // match loanInfo to Program 2 loanInfo above
+          maxLoanAmt: 5400,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 8,
+            apr36: 10.94,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+    ],
+  },
+  // {
+  //     name: "Program 3",
+  //     url: "https://my.skills.fund/application?lenderCode=LENDERCODE3",
+  //     loanInfo: { // match loanInfo in first metro below
+  //         maxLoanAmt: 15995,
+  //         loanTerm36: true,
+  //         loanTerm60: true,
+  //         '0': {
+  //             k: 5,
+  //             apr36: 11.16,
+  //             apr60: 12.51
+  //         },
+  //         '1': {
+  //           apr36: 11.25,
+  //           apr60: 12.55
+  //       }
+  //     },
+  //     defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+  //     showMetros: false,
+  //     showLoanTypes: false,
+  //     locations: ["Metro A", "Metro B", "Metro C"],
+  //     metros: [
+  //         {
+  //           location: "Metro A",
+  //           loanInfo: { // match loanInfo to Program 3 loanInfo above
+  //             maxLoanAmt: 15995,
+  //             loanTerm36: true,
+  //             loanTerm60: true,
+  //             '0': {
+  //                 k: 5,
+  //                 apr36: 11.16,
+  //                 apr60: 12.51
+  //             },
+  //             '1': {
+  //                 apr36: 11.25,
+  //                 apr60: 12.55
+  //             }
+  //           }
+  //         },
+  //         {
+  //           location: "Metro B",
+  //           loanInfo: {
+  //               maxLoanAmt: 15545,
+  //               loanTerm36: true,
+  //               loanTerm60: true,
+  //               '0': {
+  //                 k: 5,
+  //                 apr36: 11.16,
+  //                 apr60: 12.51
+  //               },
+  //               '1': {
+  //                 apr36: 11.25,
+  //                 apr60: 12.55
+  //             }
+  //           }
+  //         },
+  //         {
+  //           location: "Metro C",
+  //           loanInfo: {
+  //               maxLoanAmt: 20545,
+  //               loanTerm36: true,
+  //               loanTerm60: true,
+  //               '0': {
+  //                 k: 5,
+  //                 apr36: 11.16,
+  //                 apr60: 12.51
+  //               },
+  //               '1': {
+  //                 apr36: 11.25,
+  //                 apr60: 12.55
+  //             }
+  //             },
+  //           }
+  //       ]
+  // }
+]
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
 export const programMaxText =
-	'Choose the loan amount that works best for you. Borrow up to $7,800 for Mobile & Web Development tuition and up to $2,500 for cost of living, or up to $5,400 for JavaScript + React tuition.';
+  "Choose the loan amount that works best for you. Borrow up to $7,700 for Mobile & Web Development tuition and up to $2,500 for cost of living, or up to $5,400 for JavaScript + React tuition."
 
 export const paymentTable = {
-	headers: [ 'Program', 'Tuition', 'Cost of Living', 'Max Total' ],
-	data: [
-		{
-			name: 'PROGRAM 1',
-			tuition: '$13,495',
-			col: '$6,000',
-			max: '$19,495'
-		},
-		{
-			name: 'PROGRAM 2',
-			tuition: '$16,495',
-			col: '$6,000',
-			max: '$22,495'
-		},
-		{
-			name: 'PROGRAM 3',
-			tuition: '$13,495',
-			col: '--',
-			max: '$13,495'
-		}
-	],
-	show: false
-};
+  headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
+  data: [
+    {
+      name: "PROGRAM 1",
+      tuition: "$13,495",
+      col: "$6,000",
+      max: "$19,495",
+    },
+    {
+      name: "PROGRAM 2",
+      tuition: "$16,495",
+      col: "$6,000",
+      max: "$22,495",
+    },
+    {
+      name: "PROGRAM 3",
+      tuition: "$13,495",
+      col: "--",
+      max: "$13,495",
+    },
+  ],
+  show: false,
+}
 
 // ***** END LOAN CALC TEXT INFO *****
 
