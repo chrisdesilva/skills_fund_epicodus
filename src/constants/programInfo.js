@@ -79,7 +79,19 @@ export const faq = {
       colAmount: "$2,500",
     },
     {
+      programName: "the Mobile & Web Development - Remote program",
+      maxAmount: "$7,700",
+      col: true,
+      colAmount: "$2,500",
+    },
+    {
       programName: "the JavaScript + React program",
+      maxAmount: "$5,400",
+      col: false,
+      colAmount: "$2,500",
+    },
+    {
+      programName: "the JavaScript + React - Remote program",
       maxAmount: "$5,400",
       col: false,
       colAmount: "$2,500",
@@ -113,7 +125,7 @@ export const threeStepCardText = {
   step2: {
     header: "select your program",
     text:
-      "Choose between the Mobile & Web Development program and the JavaScript + React program.",
+      "Choose between the Mobile & Web Development program, Mobile & Web Development - Remote program, JavaScript + React - Remote program, and the JavaScript + React program.",
   },
   step3: `You'll be on your way to an exciting career in tech as part of ${schoolName}'s powerful network.`,
 }
@@ -208,7 +220,125 @@ export const programLoanInfo = [
     ],
   },
   {
+    name: "Mobile & Web Development - Remote",
+    url: "https://my.skills.fund/application?lenderCode=SKEP17",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 10200,
+      loanTerm36: true,
+      loanTerm60: true,
+      "0": {
+        // interest-only
+        k: 8,
+        apr36: 10.94,
+        apr60: 12.51,
+      },
+      "1": null, // immediate repayment
+    },
+    defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false, // true if there are multiple metros with different tuition amounts for the same program
+    showLoanTypes: false, // true if both IR and IO are available
+    locations: ["Metro 1", "Metro 2", "Metro 3"],
+    metros: [
+      // list in same order as locations array above
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // // match loanInfo to Program 1 above
+          maxLoanAmt: 10200,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 8,
+            apr36: 10.94,
+            apr60: 12.41,
+          },
+          "1": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 10.94,
+            apr60: 12.41,
+          },
+          "1": null,
+        },
+      },
+      {
+        location: "Metro 3",
+        loanInfo: {
+          maxLoanAmt: 20545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+    ],
+  },
+  {
     name: "JavaScript + React",
+    url: "https://my.skills.fund/application?lenderCode=SKEPJR19",
+    loanInfo: {
+      // match loanInfo in first metro below
+      maxLoanAmt: 5400,
+      loanTerm36: true,
+      loanTerm60: true,
+      "0": {
+        k: 8,
+        apr36: 10.94,
+        apr60: 12.51,
+      },
+      "1": null,
+    },
+    defaultLoanType: "0", // leave at 0 for interest-only, set to 1 for immediate repayment
+    showMetros: false,
+    showLoanTypes: false,
+    locations: ["Metro 1", "Metro 2"],
+    metros: [
+      {
+        location: "Metro 1",
+        loanInfo: {
+          // match loanInfo to Program 2 loanInfo above
+          maxLoanAmt: 5400,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 8,
+            apr36: 10.94,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+      {
+        location: "Metro 2",
+        loanInfo: {
+          maxLoanAmt: 15545,
+          loanTerm36: true,
+          loanTerm60: true,
+          "0": {
+            k: 5,
+            apr36: 11.16,
+            apr60: 12.51,
+          },
+          "1": null,
+        },
+      },
+    ],
+  },
+  {
+    name: "JavaScript + React - Remote",
     url: "https://my.skills.fund/application?lenderCode=SKEPJR19",
     loanInfo: {
       // match loanInfo in first metro below
@@ -337,7 +467,7 @@ export const programLoanInfo = [
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
 export const programMaxText =
-  "Choose the loan amount that works best for you. Borrow up to $7,700 for Mobile & Web Development tuition and up to $2,500 for cost of living, or up to $5,400 for JavaScript + React tuition."
+  "Choose the loan amount that works best for you. Borrow up to $7,700 for Mobile & Web Development/Mobile & Web Development - Remote tuition and up to $2,500 for cost of living, or up to $5,400 for JavaScript + React/JavaScript + React - Remote tuition."
 
 export const paymentTable = {
   headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
