@@ -339,7 +339,7 @@ export const programLoanInfo = [
   },
   {
     name: "JavaScript + React - Remote",
-    url: "https://my.skills.fund/application?lenderCode=SKEPJRRPT20",
+    url: "https://my.skills.fund/application?lenderCode=SKEPJRRPT20`",
     loanInfo: {
       // match loanInfo in first metro below
       maxLoanAmt: 5400,
