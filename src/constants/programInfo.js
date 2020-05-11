@@ -74,13 +74,13 @@ export const faq = {
   loanRange: [
     {
       programName: "the Mobile & Web Development program",
-      maxAmount: "$7,700",
+      maxAmount: "$8,900",
       col: true,
       colAmount: "$2,500",
     },
     {
       programName: "the Mobile & Web Development - Remote program",
-      maxAmount: "$7,700",
+      maxAmount: "$8,900",
       col: true,
       colAmount: "$2,500",
     },
@@ -142,8 +142,8 @@ export const selectAProgram = "select_a_epicodus_program" // update school name 
 
 // ***** BEGIN LOAN APP AND CALC INFO *****
 
-export const defaultLoanAmount = 7700
-export const placeholder = "$7,700"
+export const defaultLoanAmount = 8900
+export const placeholder = "$8,900"
 export const interestRates = {
   ir36: 8.99,
   ir60: 10.99,
@@ -157,7 +157,7 @@ export const programLoanInfo = [
     url: "https://my.skills.fund/application?lenderCode=SKEP17",
     loanInfo: {
       // match loanInfo in first metro below
-      maxLoanAmt: 10200,
+      maxLoanAmt: 11400,
       loanTerm36: true,
       loanTerm60: true,
       "Interest Only": {
@@ -179,7 +179,7 @@ export const programLoanInfo = [
         location: "Metro 1",
         loanInfo: {
           // // match loanInfo to Program 1 above
-          maxLoanAmt: 10200,
+          maxLoanAmt: 11400,
           loanTerm36: true,
           loanTerm60: true,
           "Interest Only": {
@@ -225,7 +225,7 @@ export const programLoanInfo = [
     url: "https://my.skills.fund/application?lenderCode=SKEPMWDR20",
     loanInfo: {
       // match loanInfo in first metro below
-      maxLoanAmt: 10200,
+      maxLoanAmt: 11400,
       loanTerm36: true,
       loanTerm60: true,
       "Interest Only": {
@@ -247,7 +247,7 @@ export const programLoanInfo = [
         location: "Metro 1",
         loanInfo: {
           // // match loanInfo to Program 1 above
-          maxLoanAmt: 10200,
+          maxLoanAmt: 11400,
           loanTerm36: true,
           loanTerm60: true,
           "Interest Only": {
@@ -472,7 +472,7 @@ export const programLoanInfo = [
 
 // ***** BEGIN LOAN CALC TEXT INFO *****
 export const programMaxText =
-  "Choose the loan amount that works best for you. Borrow up to $7,700 for Mobile & Web Development/Mobile & Web Development - Remote tuition and up to $2,500 for cost of living, or up to $5,400 for JavaScript + React/JavaScript + React - Remote tuition."
+  "Choose the loan amount that works best for you. Borrow up to $8,900 for Mobile & Web Development/Mobile & Web Development - Remote tuition and up to $2,500 for cost of living, or up to $5,400 for JavaScript + React/JavaScript + React - Remote tuition."
 
 export const paymentTable = {
   headers: ["Program", "Tuition", "Cost of Living", "Max Total"],
