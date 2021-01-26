@@ -134,37 +134,37 @@ export const faq = {
   loanRange: [
     {
       programName: "the Mobile & Web Development program",
-      maxAmount: "$8,900",
+      maxAmount: "$11,600",
       col: true,
       colAmount: "$2,500",
     },
     {
       programName: "the Mobile & Web Development - Remote program",
-      maxAmount: "$8,900",
+      maxAmount: "$11,600",
       col: true,
       colAmount: "$2,500",
     },
     {
       programName: "the Mobile & Web Development Part-Time program",
-      maxAmount: "$8,900",
+      maxAmount: "$11,600",
       col: true,
       colAmount: "$2,500",
     },
     {
       programName: "the Mobile & Web Development Part-Time - Remote program",
-      maxAmount: "$8,900",
+      maxAmount: "$11,600",
       col: true,
       colAmount: "$2,500",
     },
     {
       programName: "the JavaScript + React program",
-      maxAmount: "$5,400",
+      maxAmount: "$11,600",
       col: false,
       colAmount: "$2,500",
     },
     {
       programName: "the JavaScript + React - Remote program",
-      maxAmount: "$5,400",
+      maxAmount: "$11,600",
       col: false,
       colAmount: "$2,500",
     },
