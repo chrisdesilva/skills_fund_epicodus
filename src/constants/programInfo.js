@@ -156,18 +156,18 @@ export const faq = {
       col: true,
       colAmount: "$2,500",
     },
-    {
-      programName: "the JavaScript + React program",
-      maxAmount: "$11,600",
-      col: false,
-      colAmount: "$2,500",
-    },
-    {
-      programName: "the JavaScript + React - Remote program",
-      maxAmount: "$11,600",
-      col: false,
-      colAmount: "$2,500",
-    },
+    // {
+    //   programName: "the JavaScript + React program",
+    //   maxAmount: "$11,600",
+    //   col: false,
+    //   colAmount: "$2,500",
+    // },
+    // {
+    //   programName: "the JavaScript + React - Remote program",
+    //   maxAmount: "$11,600",
+    //   col: false,
+    //   colAmount: "$2,500",
+    // },
   ],
 }
 
@@ -496,110 +496,110 @@ export const programLoanInfo = [
       },
     ],
   },
-  {
-    name: "JavaScript + React",
-    url: "https://my.skills.fund/application?lenderCode=SKEPJR19",
-    loanInfo: {
-      // match loanInfo in first metro below
-      maxLoanAmt: 5400,
-      loanTerm36: true,
-      loanTerm60: true,
-      "Interest Only": {
-        k: 9,
-        apr36: 11.34,
-        apr60: 12.51,
-      },
-      "Immediate Repayment": null,
-    },
-    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
-    showMetros: false,
-    showLoanTypes: false,
-    loanTypes: ["Interest Only"],
-    locations: ["Metro 1", "Metro 2"],
-    metros: [
-      {
-        location: "Metro 1",
-        loanInfo: {
-          // match loanInfo to Program 2 loanInfo above
-          maxLoanAmt: 5400,
-          loanTerm36: true,
-          loanTerm60: true,
-          "Interest Only": {
-            k: 9,
-            apr36: 11.34,
-            apr60: 12.51,
-          },
-          "Immediate Repayment": null,
-        },
-      },
-      {
-        location: "Metro 2",
-        loanInfo: {
-          maxLoanAmt: 15545,
-          loanTerm36: true,
-          loanTerm60: true,
-          "Interest Only": {
-            k: 5,
-            apr36: 11.16,
-            apr60: 12.51,
-          },
-          "Immediate Repayment": null,
-        },
-      },
-    ],
-  },
-  {
-    name: "JavaScript + React - Remote",
-    url: "https://my.skills.fund/application?lenderCode=SKEPJRRPT20`",
-    loanInfo: {
-      // match loanInfo in first metro below
-      maxLoanAmt: 5400,
-      loanTerm36: true,
-      loanTerm60: true,
-      "Interest Only": {
-        k: 9,
-        apr36: 11.34,
-        apr60: 12.51,
-      },
-      "Immediate Repayment": null,
-    },
-    defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
-    showMetros: false,
-    showLoanTypes: false,
-    loanTypes: ["Interest Only"],
-    locations: ["Metro 1", "Metro 2"],
-    metros: [
-      {
-        location: "Metro 1",
-        loanInfo: {
-          // match loanInfo to Program 2 loanInfo above
-          maxLoanAmt: 5400,
-          loanTerm36: true,
-          loanTerm60: true,
-          "Interest Only": {
-            k: 9,
-            apr36: 11.34,
-            apr60: 12.51,
-          },
-          "Immediate Repayment": null,
-        },
-      },
-      {
-        location: "Metro 2",
-        loanInfo: {
-          maxLoanAmt: 15545,
-          loanTerm36: true,
-          loanTerm60: true,
-          "Interest Only": {
-            k: 5,
-            apr36: 11.16,
-            apr60: 12.51,
-          },
-          "Immediate Repayment": null,
-        },
-      },
-    ],
-  },
+  // {
+  //   name: "JavaScript + React",
+  //   url: "https://my.skills.fund/application?lenderCode=SKEPJR19",
+  //   loanInfo: {
+  //     // match loanInfo in first metro below
+  //     maxLoanAmt: 5400,
+  //     loanTerm36: true,
+  //     loanTerm60: true,
+  //     "Interest Only": {
+  //       k: 9,
+  //       apr36: 11.34,
+  //       apr60: 12.51,
+  //     },
+  //     "Immediate Repayment": null,
+  //   },
+  //   defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+  //   showMetros: false,
+  //   showLoanTypes: false,
+  //   loanTypes: ["Interest Only"],
+  //   locations: ["Metro 1", "Metro 2"],
+  //   metros: [
+  //     {
+  //       location: "Metro 1",
+  //       loanInfo: {
+  //         // match loanInfo to Program 2 loanInfo above
+  //         maxLoanAmt: 5400,
+  //         loanTerm36: true,
+  //         loanTerm60: true,
+  //         "Interest Only": {
+  //           k: 9,
+  //           apr36: 11.34,
+  //           apr60: 12.51,
+  //         },
+  //         "Immediate Repayment": null,
+  //       },
+  //     },
+  //     {
+  //       location: "Metro 2",
+  //       loanInfo: {
+  //         maxLoanAmt: 15545,
+  //         loanTerm36: true,
+  //         loanTerm60: true,
+  //         "Interest Only": {
+  //           k: 5,
+  //           apr36: 11.16,
+  //           apr60: 12.51,
+  //         },
+  //         "Immediate Repayment": null,
+  //       },
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "JavaScript + React - Remote",
+  //   url: "https://my.skills.fund/application?lenderCode=SKEPJRRPT20`",
+  //   loanInfo: {
+  //     // match loanInfo in first metro below
+  //     maxLoanAmt: 5400,
+  //     loanTerm36: true,
+  //     loanTerm60: true,
+  //     "Interest Only": {
+  //       k: 9,
+  //       apr36: 11.34,
+  //       apr60: 12.51,
+  //     },
+  //     "Immediate Repayment": null,
+  //   },
+  //   defaultLoanType: "Interest Only", // leave at 0 for interest-only, set to 1 for immediate repayment
+  //   showMetros: false,
+  //   showLoanTypes: false,
+  //   loanTypes: ["Interest Only"],
+  //   locations: ["Metro 1", "Metro 2"],
+  //   metros: [
+  //     {
+  //       location: "Metro 1",
+  //       loanInfo: {
+  //         // match loanInfo to Program 2 loanInfo above
+  //         maxLoanAmt: 5400,
+  //         loanTerm36: true,
+  //         loanTerm60: true,
+  //         "Interest Only": {
+  //           k: 9,
+  //           apr36: 11.34,
+  //           apr60: 12.51,
+  //         },
+  //         "Immediate Repayment": null,
+  //       },
+  //     },
+  //     {
+  //       location: "Metro 2",
+  //       loanInfo: {
+  //         maxLoanAmt: 15545,
+  //         loanTerm36: true,
+  //         loanTerm60: true,
+  //         "Interest Only": {
+  //           k: 5,
+  //           apr36: 11.16,
+  //           apr60: 12.51,
+  //         },
+  //         "Immediate Repayment": null,
+  //       },
+  //     },
+  //   ],
+  // },
   // {
   //     name: "Program 3",
   //     url: "https://my.skills.fund/application?lenderCode=LENDERCODE3",
